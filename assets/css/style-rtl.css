@@ -22588,4 +22588,12 @@ html[dir=rtl] .choices__input {
 }
 
 /*User CSS*/
+.main-truck{
+  width: 100%;
+  height: 500px;
+}
+.logo-naapp{
+  width: 400px;
+  height: 220px;
+}
 /*# sourceMappingURL=style-rtl.css.map */
