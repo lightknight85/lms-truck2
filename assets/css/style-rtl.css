@@ -22592,8 +22592,9 @@ html[dir=rtl] .choices__input {
   width: 100%;
   height: 500px;
 }
-.logo-naapp{
-  width: 400px;
-  height: 220px;
+.sign-in-img{
+  width: 900px;
+  height: 650px;
+  margin-top: 10rem;
 }
 /*# sourceMappingURL=style-rtl.css.map */
