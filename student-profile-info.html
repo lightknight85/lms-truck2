@@ -2,9 +2,9 @@
 <html lang="fa" dir="rtl">
 
 
-<!-- Mirrored from fixdevelopdemo.ir/theme/eduport/rtl/student-course-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 09 Mar 2025 07:40:33 GMT -->
+<!-- Mirrored from fixdevelopdemo.ir/theme/eduport/rtl/instructor-edit-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 09 Mar 2025 07:40:37 GMT -->
 <head>
-	<title>لیست دوره ها</title>
+	<title>اطلاعات</title>
 
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
@@ -78,12 +78,12 @@
 	<!-- Plugins CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/choices/css/choices.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendor/aos/aos.css">
+
+	
 
 	<!-- Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style-rtl.css">
-	
+
 </head>
 
 <body>
@@ -252,7 +252,6 @@ Page content START -->
 <section class="pt-0">
 	<div class="container">
 		<div class="row">
-
 			<!-- Left sidebar START -->
 			<div class="col-xl-3">
 				<!-- Responsive offcanvas body START -->
@@ -268,8 +267,8 @@ Page content START -->
 							<!-- Dashboard menu -->
 							<div class="list-group list-group-dark list-group-borderless collapse-list">
 								<a class="list-group-item" href="student-dashboard.html"><i class="bi bi-ui-checks-grid fa-fw me-2"></i>داشبورد</a>
-								<a class="list-group-item" href="student-profile-info.html"><i class="bi bi-card-checklist fa-fw me-2"></i>اطلاعات</a>
-								<a class="list-group-item active" href="student-course-list.html"><i class="bi bi-basket fa-fw me-2"></i>لیست دوره ها</a>
+								<a class="list-group-item active" href="student-profile-info.html"><i class="bi bi-card-checklist fa-fw me-2"></i>اطلاعات</a>
+								<a class="list-group-item" href="student-course-list.html"><i class="bi bi-basket fa-fw me-2"></i>لیست دوره ها</a>
 								<a class="list-group-item" href="student-course-resume.html"><i class="far fa-fw fa-file-alt me-2"></i>توضیحات دوره</a>
 								<a class="list-group-item" href="student-quiz.html"><i class="bi bi-question-diamond fa-fw me-2"></i>امتحانات</a>
 								<a class="list-group-item" href="student-bookmark.html"><i class="bi bi-cart-check fa-fw me-2"></i>موردعلاقه ها</a>
@@ -285,266 +284,73 @@ Page content START -->
 
 			<!-- Main content START -->
 			<div class="col-xl-9">
+				<!-- Edit profile START -->
 				<div class="card bg-transparent border rounded-3">
-					<!-- Card header START -->
+					<!-- Card header -->
 					<div class="card-header bg-transparent border-bottom">
-						<h3 class="mb-0 fs-5 ff-vb">لیست دوره های من</h3>
+						<h3 class="card-header-title mb-0 ff-vb fs-5">ویرایش پروفایل</h3>
 					</div>
-					<!-- Card header END -->
-
 					<!-- Card body START -->
 					<div class="card-body">
+						<!-- Form -->
+						<form class="row g-4">
 
-						<!-- Search and select START -->
-						<div class="row g-3 align-items-center justify-content-between mb-4">
-							<!-- Content -->
-							<div class="col-md-8">
-								<form class="rounded position-relative">
-									<input class="form-control pe-5 bg-transparent" type="search" placeholder="جستجوی دوره" aria-label="Search">
-									<button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
-								<i class="fas fa-search fs-6 "></i>
-							</button>
-								</form>
+							<!-- Full name -->
+							<div class="col-12">
+								<label class="form-label">نام و نام خانوادگی</label>
+								<div class="input-group">
+									<input type="text" class="form-control" value="علی" placeholder="نام">
+									<input type="text" class="form-control" value="محمدی" placeholder="نام خانوادگی">
+								</div>
 							</div>
 
-							<!-- Select option -->
-							<div class="col-md-3">
-								<!-- Short by filter -->
-								<form>
-									<select class="form-select js-choice border-0 z-index-9 bg-transparent" aria-label=".form-select-sm">
-										<option value="">مرتب سازی</option>
-										<option>رایگان</option>
-										<option>جدیدترین</option>
-										<option>پربازدیدترین</option>
-										<option>پرفروش ترین</option>
-									</select>
-								</form>
+							<!-- fathername -->
+							<div class="col-md-6">
+								<label class="form-label">نام پدر</label>
+								<div class="input-group">
+									<input type="text" class="form-control" value="محمود">
+								</div>
 							</div>
-						</div>
-						<!-- Search and select END -->
 
-						<!-- Course list table START -->
-						<div class="table-responsive border-0">
-							<table class="table table-dark-gray align-middle p-4 mb-0 table-hover">
-								<!-- Table head -->
-								<thead>
-									<tr>
-										<th scope="col" class="border-0 rounded-start">دوره</th>
-										<th scope="col" class="border-0">کل دوره ها</th>
-										<th scope="col" class="border-0">دوره های تکمیل</th>
-										<th scope="col" class="border-0 rounded-end">عملیات</th>
-									</tr>
-								</thead>
+							<!--  id  -->
+							<div class="col-md-6">
+								<label class="form-label"> کد ملی</label>
+								<input class="form-control" type="number" value="1231231212"  placeholder=" xxxxxxxxxx">
+							</div>
 
-								<!-- Table body START -->
-								<tbody>
-									<!-- Table item -->
-									<tr>
-										<!-- Table data -->
-										<td>
-											<div class="d-flex align-items-center">
-												<!-- Image -->
-												<div class="w-100px">
-													<img src="assets/images/courses/4by3/08.jpg" class="rounded" alt="">
-												</div>
-												<div class="mb-0 ms-2">
-													<!-- Title -->
-													<h6 class="fw-normal"><a href="#">دوره جامع آموزش Sketch</a></h6>
-													<!-- Info -->
-													<div class="overflow-hidden">
-														<h6 class="mb-0 text-end">85%</h6>
-														<div class="progress progress-sm bg-primary bg-opacity-10">
-															<div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-left" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</td>
+							<!--  phone number -->
+							<div class="col-md-6">
+								<label class="form-label">شماره تلفن</label>
+								<input class="form-control" type="number" value="09123456789"  placeholder=" 09123456789">
+							</div>
 
-										<!-- Table data -->
-										<td>56</td>
+							<!-- birth date  -->
+							<div class="col-md-6">
+								<label class="form-label">تاریخ تولد</label>
+								<input type="date" data-jdp class="form-control" value="xxxx" placeholder=" xxxx/xx/xx ">
+								
+							</div>
 
-										<!-- Table data -->
-										<td>40</td>
+							<!-- Location -->
+							<div class="col-md-6">
+								<label class="form-label">آدرس</label>
+								<input class="form-control" type="text" value="تهران">
+							</div>		
 
-										<!-- Table data -->
-										<td>
-											<a href="#" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>ادامه</a>
-										</td>
-									</tr>
-
-									<!-- Table item -->
-									<tr>
-										<!-- Table data -->
-										<td>
-											<div class="d-flex align-items-center">
-												<!-- Image -->
-												<div class="w-100px">
-													<img src="assets/images/courses/4by3/03.jpg" class="rounded" alt="">
-												</div>
-												<div class="mb-0 ms-2">
-													<!-- Title -->
-													<h6 class="fw-normal"><a href="#">دوره جامع آموزش Figma</a></h6>
-													<!-- Info -->
-													<div class="overflow-hidden">
-														<h6 class="mb-0 text-end">100%</h6>
-														<div class="progress progress-sm bg-primary bg-opacity-10">
-															<div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-left" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</td>
-
-										<!-- Table data -->
-										<td>42</td>
-
-										<!-- Table data -->
-										<td>42</td>
-
-										<!-- Table data -->
-										<td>
-											<button class="btn btn-sm btn-success me-1 mb-1 mb-x;-0 disabled"><i class="bi bi-check me-1"></i>تکمیل شده</button>
-											<a href="#" class="btn btn-sm btn-light me-1"><i class="bi bi-arrow-repeat me-1"></i>راه اندازی مجدد</a>
-										</td>
-									</tr>
-
-									<!-- Table item -->
-									<tr>
-										<!-- Table data -->
-										<td>
-											<div class="d-flex align-items-center">
-												<!-- Image -->
-												<div class="w-100px">
-													<img src="assets/images/courses/4by3/05.jpg" class="rounded" alt="">
-												</div>
-												<div class="mb-0 ms-2">
-													<!-- Title -->
-													<h6 class="fw-normal"><a href="#">دوره جامع آموزش Python</a></h6>
-													<!-- Info -->
-													<div class="overflow-hidden">
-														<h6 class="mb-0 text-end">60%</h6>
-														<div class="progress progress-sm bg-primary bg-opacity-10">
-															<div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-left" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</td>
-
-										<!-- Table data -->
-										<td>28</td>
-
-										<!-- Table data -->
-										<td>12</td>
-
-										<!-- Table data -->
-										<td>
-											<a href="#" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>ادامه</a>
-										</td>
-									</tr>
-
-									<!-- Table item -->
-									<tr>
-										<!-- Table data -->
-										<td>
-											<div class="d-flex align-items-center">
-												<!-- Image -->
-												<div class="w-100px">
-													<img src="assets/images/courses/4by3/01.jpg" class="rounded" alt="">
-												</div>
-												<div class="mb-0 ms-2">
-													<!-- Title -->
-													<h6 class="fw-normal"><a href="#">دوره جامع آموزش Laravel</a></h6>
-													<!-- Info -->
-													<div class="overflow-hidden">
-														<h6 class="mb-0 text-end">40%</h6>
-														<div class="progress progress-sm bg-primary bg-opacity-10">
-															<div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-left" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</td>
-										<!-- Table data -->
-										<td>32</td>
-
-										<!-- Table data -->
-										<td>18</td>
-
-										<!-- Table data -->
-										<td>
-											<a href="#" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>ادامه</a>
-										</td>
-									</tr>
-
-									<!-- Table item -->
-									<tr>
-										<!-- Table data -->
-										<td>
-											<div class="d-flex align-items-center">
-												<!-- Image -->
-												<div class="w-100px">
-													<img src="assets/images/courses/4by3/02.jpg" class="rounded" alt="">
-												</div>
-												<div class="mb-0 ms-2">
-													<!-- Title -->
-													<h6 class="fw-normal"><a href="#">دوره جامع آموزش Photoshop</a></h6>
-													<!-- Info -->
-													<div class="overflow-hidden">
-														<h6 class="mb-0 text-end">90%</h6>
-														<div class="progress progress-sm bg-primary bg-opacity-10">
-															<div class="progress-bar bg-primary aos" role="progressbar" data-aos="slide-left" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</td>
-										<!-- Table data -->
-										<td>16</td>
-
-										<!-- Table data -->
-										<td>14</td>
-										
-										<!-- Table data -->
-										<td>
-											<a href="#" class="btn btn-sm btn-primary-soft me-1 mb-1 mb-md-0"><i class="bi bi-play-circle me-1"></i>ادامه</a>
-										</td>
-									</tr>
-								</tbody>
-								<!-- Table body END -->
-							</table>
-						</div>
-						<!-- Course list table END -->
-
-						<!-- Pagination START -->
-						<div class="d-sm-flex justify-content-sm-between align-items-sm-center mt-4 mt-sm-3">
-							<!-- Content -->
-							<p class="mb-0 text-center text-sm-start">نمایش 1 تا 8 از 20</p>
-							<!-- Pagination -->
-							<nav class="d-flex justify-content-center mb-0" aria-label="navigation">
-								<ul class="pagination pagination-sm pagination-primary-soft d-inline-block d-md-flex rounded mb-0">
-									<li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-right"></i></a></li>
-									<li class="page-item mb-0"><a class="page-link" href="#">1</a></li>
-									<li class="page-item mb-0 active"><a class="page-link" href="#">2</a></li>
-									<li class="page-item mb-0"><a class="page-link" href="#">3</a></li>
-									<li class="page-item mb-0"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
-								</ul>
-							</nav>
-						</div>
-						<!-- Pagination END -->
+							<!-- Save button -->
+							<div class="d-sm-flex justify-content-end">
+								<button type="button" class="btn btn-primary mb-0">ذخیره</button>
+							</div>
+						</form>
 					</div>
-					<!-- Card body START -->
+					<!-- Card body END -->
 				</div>
+				<!-- Edit profile END -->
+
 			</div>
 			<!-- Main content END -->
-		</div> <!-- Row END -->
-	</div>	
+		</div><!-- Row END -->
+	</div>
 </section>
 <!-- =======================
 Page content END -->
@@ -591,15 +397,11 @@ Footer END -->
 <!-- Bootstrap JS -->
 <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Vendors -->
-<script src="assets/vendor/choices/js/choices.min.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-
 <!-- Template Functions -->
 <script src="assets/js/functions.js"></script>
 
 </body>
 
 
-<!-- Mirrored from fixdevelopdemo.ir/theme/eduport/rtl/student-course-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 09 Mar 2025 07:40:33 GMT -->
+<!-- Mirrored from fixdevelopdemo.ir/theme/eduport/rtl/instructor-edit-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 09 Mar 2025 07:40:37 GMT -->
 </html>
